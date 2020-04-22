@@ -1,10 +1,10 @@
 def find_element_index(array, value_to_find)
   # Add your solution here
   count = 0 
-  if value_to_find.eql?(array[count])
-    return count
+  while count < array.length do
+    if value_to_find == array[count]
+      return count
+    end
     count += 1
-  else
-    return nil
   end
 end
